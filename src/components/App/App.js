@@ -1,61 +1,98 @@
 import React from 'react';
-import './App.css';
 import HeaderText from "../HeaderText/HeaderText";
 import Label from "../Label/Label";
 import Paragraph from "../Paragraph/Paragraph";
 import LineBreak from "../LineBreak/LineBreak";
 import Dropdown from "../Dropdown/Dropdown";
 import Checkbox from "../Checkbox/Checkbox";
+import Image from "../Image/Image";
 import MultipleChoice from "../MultipleChoice/MultipleChoice";
 import TextInput from "../TextInput/TextInput";
 import NumberInput from "../NumberInput/NumberInput";
 import MultiLineInput from "../MultiLineInput/MultiLineInput";
-import Image from "../Image/Image";
+
+import style from './App.module.css';
+
+import {
+  FaArrowsAltH,
+  FaCaretSquareDown,
+  FaFont,
+  FaHeading,
+  FaParagraph,
+  FaPlus,
+  FaRegImage,
+  FaTextHeight
+} from 'react-icons/fa';
+import {FiCheckSquare} from 'react-icons/fi';
+import {MdRadioButtonChecked} from 'react-icons/md';
+
 
 const ITEMS = [
   {
     id: 1,
     name: 'Card',
+    icon: <FaHeading/>,
+    content: <HeaderText/>
   },
   {
     id: 2,
-    name: 'Label'
+    name: 'Label',
+    icon: <FaFont/>,
+    content: <Label/>
   },
   {
     id: 3,
-    name: 'Paragraph'
+    name: 'Paragraph',
+    icon: <FaParagraph/>,
+    content: <Paragraph/>
   },
   {
     id: 4,
-    name: 'Line Break'
+    name: 'Line Break',
+    icon: <FaArrowsAltH/>,
+    content: <LineBreak/>
   },
   {
     id: 5,
-    name: 'Dropdown'
+    name: 'Dropdown',
+    icon: <FaCaretSquareDown/>,
+    content: <Dropdown/>
   },
   {
     id: 6,
-    name: 'Checkbox'
+    name: 'Checkbox',
+    icon: <FiCheckSquare/>,
+    content: <Checkbox/>
   },
   {
     id: 7,
-    name: 'Multiple Choice'
+    name: 'Multiple Choice',
+    icon: <MdRadioButtonChecked/>,
+    content: <MultipleChoice/>
   },
   {
     id: 8,
-    name: 'Text Input'
+    name: 'Text Input',
+    icon: <FaFont/>,
+    content: <TextInput/>
   },
   {
     id: 9,
-    name: 'Number Input'
+    name: 'Number Input',
+    icon: <FaPlus/>,
+    content: <NumberInput/>
   },
   {
     id: 10,
-    name: 'Multi-line Input'
+    name: 'Multi-line Input',
+    icon: <FaTextHeight/>,
+    content: <MultiLineInput/>
   },
   {
     id: 11,
-    name: 'Image'
+    name: 'Image',
+    icon: <FaRegImage/>,
+    content: <Image/>
   },
 ];
 
@@ -63,76 +100,69 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dragItems: {ITEMS},
-      dropItem: {id: ''},
+      items: ITEMS,
+      dropItems: [],
     };
   }
 
-  dragStart = (ev) => {
-    const dropId = ev.target.id;
-    this.setState({dropItem: {id: dropId}});
+  onDragStart = (e, v) => {
+    this.draggedItem = v;
+    e.dataTransfer.dropEffect = "move";
+    e.dataTransfer.setData("text/plain", v);
   };
 
-  allowDrop = (ev) => {
+  allowDrop = (ev, index) => {
     ev.preventDefault();
+    const {dropItems} = this.state;
+
+    const draggedOverItem = this.state.dropItems[index];
+    if (this.draggedItem === draggedOverItem) {
+      return;
+    }
+    let items = this.state.dropItems.filter(item => item !== this.draggedItem);
+    items.splice(index, 0, this.draggedItem);
+    this.setState({dropItems})
   };
 
-  drop = () => {
-    const {dropItem} = this.state;
+  onDrop = (e) => {
+    e.preventDefault();
+    const data = e.dataTransfer.getData("text/plain");
+    let {dropItems} = this.state;
+    dropItems.push(data);
+    this.setState({dropItems});
+  };
 
-    const selectComponent = ({dropItem}) => {
-      switch (dropItem.id) {
-        case 1:
-          return <HeaderText/>;
-        case 2:
-          return <Label/>;
-        case 3:
-          return <Paragraph/>;
-        case 4:
-          return <LineBreak/>;
-        case 5:
-          return <Dropdown/>;
-        case 6:
-          return <Checkbox/>;
-        case 7:
-          return <MultipleChoice/>;
-        case 8:
-          return <TextInput/>;
-        case 9:
-          return <NumberInput/>;
-        case 10:
-          return <MultiLineInput/>;
-        case 11:
-          return <Image/>;
-      }
-    };
-    return (
-      <ul>
-        {dropItem.map((item, index) => selectComponent({item, index}))}
-      </ul>
-    )
+  onDragEnd = (v) => {
+    this.v = null;
   };
 
   render() {
-    const {dragItems, dropItem} = this.state;
-    console.log(this.state.dragItems);
-    console.log(this.state.dropItem);
+    const {items, dropItems} = this.state;
 
     return (
-      <div className='app_main_container'>
-        <div className='app_container'>
-          <div className='drop_zone' onDragOver={this.allowDrop} onDrop={this.drop}>
-
+      <div className={style.app_main_container}>
+        <div className={style.app_container}>
+          <div className={style.drop_zone} onDragOver={this.allowDrop} onDrop={this.onDrop}>
+            {dropItems.map(item => {
+              return (
+                <div>
+                  <div key={item} draggable>
+                    {ITEMS[item - 1].content}
+                  </div>
+                </div>
+              )
+            })}
           </div>
-          <div className='drag_zone'>
-            <ul className='app_ul_container'>
-              {dragItems.ITEMS.map((item) =>
+          <div className={style.drag_zone}>
+            <ul className={style.app_ul_container}>
+              {items.map((item) =>
                 <li
                   key={item.id}
                   id={item.id}
-                  onDragStart={this.dragStart}
+                  onDragStart={(e) => this.onDragStart(e, item.id)}
                   draggable
                 >
+                  <i className={style.li_icon}> {item.icon}</i>
                   {item.name}
                 </li>
               )}

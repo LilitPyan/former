@@ -1,5 +1,0 @@
- /*<ul className = 'app_ul_container'>
-                {ITEMS.map((item, index) =>
-                 <DragInput key = {item.id} item = {item} addItem = {this.addItem}/>
-                )}
-              </ul>*/import React from "react";

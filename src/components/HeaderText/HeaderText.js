@@ -1,30 +1,21 @@
 import './HeaderText.css';
 import React from 'react'
-import { useDrag} from 'react-dnd'
-import {TYPES} from "../DragInput/DragInput";
 
-const HeaderText=({item, addItem})=>{
-  const [, drag] = useDrag({
-      item: {...item, type: TYPES.ITEM},
-      end: (item, monitor) => {
-        const dropResult = monitor.getDropResult();
-        if (item && dropResult) {
-          return
-        }
-      },
-      collect: monitor => ({
-        isDragging: monitor.isDragging(),
-      }),
-    });
+class HeaderText extends React.Component {
+  constructor(props){
+    super(props)
+  }
 
-  return (
-    <li className='header_text' ref = {drag} draggable='true'>
-      <label>Header Text</label>
-      <br/>
-      <input type='text'/>
-      <button className='header_text_btn'>Edit</button>
-      <button className='header_text_btn'>Delete</button>
-    </li>
-  )
+  render() {
+    return (
+      <div className='header_text'>
+        <label>Header Text</label>
+        <br/>
+        <input type='text'/>
+        <button className='header_text_btn'>Edit</button>
+        <button className='header_text_btn'>Delete</button>
+      </div>
+    )
+  }
 }
 export default HeaderText;

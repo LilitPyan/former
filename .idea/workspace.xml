@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d2a8c5-3047-494f-9c27-f2586476bbb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/DropArea/example.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/items.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DragInput/DragInput.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DragInput/DragInput.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DragInput/example" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DragInput/example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropArea/DropArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DropArea/DropArea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dropdown/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dropdown/Dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DragInput/DragInput.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DragInput/DragInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DragInput/example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DropArea/DropArea.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DropArea/DropArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DropArea/example.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeaderText/HeaderText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderText/HeaderText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Image/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Image/Image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Label/Label.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Label/Label.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LineBreak/LineBreak.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LineBreak/LineBreak.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MultiLineInput/MultiLineInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MultiLineInput/MultiLineInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MultipleChoice/MultipleChoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MultipleChoice/MultipleChoice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NumberInput/NumberInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NumberInput/NumberInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TextInput/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextInput/TextInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +94,7 @@
       <workItem from="1573842683792" duration="4548000" />
       <workItem from="1573891595347" duration="4053000" />
       <workItem from="1573978222746" duration="27000" />
-      <workItem from="1575191745806" duration="11403000" />
+      <workItem from="1575191745806" duration="32347000" />
     </task>
     <servers />
   </component>
