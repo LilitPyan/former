@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p{
+  margin: 0;
+}
+button{
+  margin: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+.app_main_container {
+  margin: 10px auto;
+  width: 1000px;
+  display: block;
+}
+.app_container {
+  height: 1100px;
+  width: 900px;
+  display: flex;
+}
+.drag_zone {
+  height: 710px;
+  width: 340px;
+  margin: 0;
+  border-style: groove;
+}
+.drop_zone {
+  height: 710px;
+  width: 700px;
+  margin: 0;
+  border-style: groove;
+}
+ul{
+  list-style-type: none;
+}
+li {
+  margin-bottom: 10px;
+  border: 1px #A9A9A9 dashed;
+  height: 35px;
+  padding-top: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: powderblue;
+}
+.ul_drop_zone {
+  height: 750px;
+  width: 700px;
+  margin: 0;
+}

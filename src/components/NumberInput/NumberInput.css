@@ -1,0 +1,14 @@
+.number_input {
+    font-weight: bolder;
+    margin: 18px;
+    padding-left: 25px;
+    background-color: darkolivegreen;
+    width: 400px;
+    height: 55px;
+}
+.number_input_btn {
+    margin-left: 45px;
+    width: 60px;
+    border-radius: 2px;
+    cursor: pointer;
+}

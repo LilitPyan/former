@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7d2a8c5-3047-494f-9c27-f2586476bbb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/DropArea/example.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/items.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DragInput/DragInput.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DragInput/DragInput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DragInput/example" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DragInput/example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DropArea/DropArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DropArea/DropArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dropdown/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dropdown/Dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderText/HeaderText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderText/HeaderText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Image/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Image/Image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Label/Label.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Label/Label.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LineBreak/LineBreak.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LineBreak/LineBreak.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MultiLineInput/MultiLineInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MultiLineInput/MultiLineInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MultipleChoice/MultipleChoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MultipleChoice/MultipleChoice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NumberInput/NumberInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NumberInput/NumberInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph/Paragraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextInput/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextInput/TextInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TQmuE675rPf6l9IDjJO4nz0Q5e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson1" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Poghos\form_builder\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Poghos\form_builder\src\components\TextInput" />
+      <recent name="C:\Users\Poghos\form_builder\src\components\DropTarget" />
+      <recent name="C:\Users\Poghos\form_builder\src\components\DraggableInput" />
+      <recent name="C:\Users\Poghos\form_builder\src\components\App" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7d2a8c5-3047-494f-9c27-f2586476bbb2" name="Default Changelist" comment="" />
+      <created>1573400914531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573400914531</updated>
+      <workItem from="1573400921077" duration="574000" />
+      <workItem from="1573401569833" duration="9000" />
+      <workItem from="1573405788957" duration="9542000" />
+      <workItem from="1573457590547" duration="6471000" />
+      <workItem from="1573464110577" duration="21796000" />
+      <workItem from="1573490682561" duration="5664000" />
+      <workItem from="1573539222615" duration="19864000" />
+      <workItem from="1573560672578" duration="3048000" />
+      <workItem from="1573578394439" duration="10378000" />
+      <workItem from="1573625208185" duration="1219000" />
+      <workItem from="1573627171275" duration="232000" />
+      <workItem from="1573631287301" duration="1779000" />
+      <workItem from="1573717625842" duration="6863000" />
+      <workItem from="1573724584287" duration="495000" />
+      <workItem from="1573727061620" duration="5053000" />
+      <workItem from="1573839837097" duration="34000" />
+      <workItem from="1573842683792" duration="4548000" />
+      <workItem from="1573891595347" duration="4053000" />
+      <workItem from="1573978222746" duration="27000" />
+      <workItem from="1575191745806" duration="11403000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,44 @@
+ {
+    id: 1,
+    name: 'Card',
+  },
+  {
+    id: 2,
+    name: 'Label'
+  },
+  {
+    id: 3,
+    name: 'Paragraph'
+  },
+  {
+    id: 4,
+    name: 'Line Break'
+  },
+  {
+    id: 5,
+    name: 'Dropdown'
+  },
+  {
+    id: 6,
+    name: 'Checkbox'
+  },
+  {
+    id: 7,
+    name: 'Multiple Choice'
+  },
+  {
+    id: 8,
+    name: 'Text Input'
+  },
+  {
+    id: 9,
+    name: 'Number Input'
+  },
+  {
+    id: 10,
+    name: 'Multi-line Input'
+  },
+  {
+    id: 11,
+    name: 'Image'
+  },

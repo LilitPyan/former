@@ -1,0 +1,98 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+.modifierArea {
+    margin-top: 20px;
+}
+.background {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    min-height: 110px;
+}
+
+.drag-area .list-group .list-group-item,
+.playarea .list-group .list-group-item {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    background-color: #e8ebf2;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.playarea .list-group .list-group-item {
+    background-color: #fff;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.droppable {
+    border: 1px solid #ddd;
+}
+.droppable .close {
+    float: none;
+    font-size: 14px;
+    margin-left: 4px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 0.4;
+}
+.drag-area .list-group,
+.playarea .list-group {
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    padding: 5px 0;
+}
+.drag-area {
+    margin-bottom: 20px;
+}
+.droppable .list-group:first-child:after {
+    content: "---";
+    width: 20px;
+}
+.grp-btn {
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.drag-area .list-group::-webkit-scrollbar,
+.playarea .list-group::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+}
+.drag-area .list-group::-webkit-scrollbar-thumb,
+.playarea .list-group::-webkit-scrollbar {
+    background-color: #c2c2c2;
+    border-radius: 20px;
+    border: 2.5px solid #e7e7e7;
+}
+.drag-area .list-group::-webkit-scrollbar-track,
+.playarea .list-group::-webkit-scrollbar {
+    border-radius: 10px;
+    background-color: #e7e7e7;
+}
+.playarea {
+    padding: 10px;
+    min-height: 200px;
+}
+.heading {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #373737;
+}
+.close_item {
+    cursor: pointer;
+}
+.here {
+    border: 2px dashed #ddd;
+    padding: 10px;
+}
