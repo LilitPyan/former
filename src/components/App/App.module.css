@@ -28,11 +28,12 @@ code {
   width: 700px;
   margin: 0;
   border-style: groove;
+  align-items: center;
 }
 ul{
   list-style-type: none;
 }
-li{
+.app_ul_container li{
   margin-bottom: 10px;
   font-size: 15px;
   border: 1px gray dashed;
@@ -49,4 +50,13 @@ li{
   padding-right: 15px;
   font-size: 14px;
   color: darkslategray;
+}
+.drag_drop_zone {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.drag_drop_item li{
+  border-style: none;
+  cursor:move;
 }

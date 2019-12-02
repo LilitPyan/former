@@ -26,7 +26,6 @@ import {
 import {FiCheckSquare} from 'react-icons/fi';
 import {MdRadioButtonChecked} from 'react-icons/md';
 
-
 const ITEMS = [
   {
     id: 1,
@@ -101,58 +100,54 @@ class App extends React.Component {
     super(props);
     this.state = {
       items: ITEMS,
-      dropItems: [],
+      dropItems: []
     };
   }
 
-  onDragStart = (e, v) => {
+  onDragStart = (e,v) => {
     this.draggedItem = v;
     e.dataTransfer.dropEffect = "move";
-    e.dataTransfer.setData("text/plain", v);
+    e.dataTransfer.setData("id", v);
   };
 
-  allowDrop = (ev, index) => {
+  allowDrop = (ev) => {
     ev.preventDefault();
-    const {dropItems} = this.state;
-
-    const draggedOverItem = this.state.dropItems[index];
-    if (this.draggedItem === draggedOverItem) {
-      return;
-    }
-    let items = this.state.dropItems.filter(item => item !== this.draggedItem);
-    items.splice(index, 0, this.draggedItem);
-    this.setState({dropItems})
   };
 
   onDrop = (e) => {
     e.preventDefault();
-    const data = e.dataTransfer.getData("text/plain");
-    let {dropItems} = this.state;
-    dropItems.push(data);
-    this.setState({dropItems});
+    const data = e.dataTransfer.getData("id");
+    this.setState({
+      dropItems:[
+        ...this.state.dropItems,
+        ITEMS[data-1]
+      ]});
   };
 
-  onDragEnd = (v) => {
-    this.v = null;
+  onDragEnd = (index) => {
+    this.index = null;
   };
 
   render() {
     const {items, dropItems} = this.state;
+    console.log(this.state.dropItems);
 
     return (
       <div className={style.app_main_container}>
         <div className={style.app_container}>
-          <div className={style.drop_zone} onDragOver={this.allowDrop} onDrop={this.onDrop}>
-            {dropItems.map(item => {
+          <ul className={style.drop_zone} onDrop={this.onDrop} onDragOver={this.allowDrop}>
+            <div>
+            {dropItems.map((item) => {
               return (
-                <div>
-                  <div key={item} draggable>
-                    {ITEMS[item - 1].content}
-                  </div>
-                </div>
+                 <li
+                  className={style.drag_drop_item}
+                 >
+                    {item.content}
+                 </li>
               )
             })}
-          </div>
+            </div>
+          </ul>
           <div className={style.drag_zone}>
             <ul className={style.app_ul_container}>
               {items.map((item) =>
@@ -160,6 +155,7 @@ class App extends React.Component {
                   key={item.id}
                   id={item.id}
                   onDragStart={(e) => this.onDragStart(e, item.id)}
+                  onDragEnd={this.onDragEnd}
                   draggable
                 >
                   <i className={style.li_icon}> {item.icon}</i>

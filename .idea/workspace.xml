@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d2a8c5-3047-494f-9c27-f2586476bbb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/HeaderText/example.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DragInput/DragInput.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DragInput/DragInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DragInput/example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropArea/DropArea.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropArea/DropArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropArea/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderText/HeaderText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderText/HeaderText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Label/Label.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Label/Label.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -95,6 +89,8 @@
       <workItem from="1573891595347" duration="4053000" />
       <workItem from="1573978222746" duration="27000" />
       <workItem from="1575191745806" duration="32347000" />
+      <workItem from="1575224811184" duration="2521000" />
+      <workItem from="1575273098136" duration="11302000" />
     </task>
     <servers />
   </component>
